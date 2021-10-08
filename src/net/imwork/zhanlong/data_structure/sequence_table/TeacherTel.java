@@ -54,10 +54,6 @@ public class TeacherTel
     @Override
     public String toString()
     {
-        return "TeacherTel{" +
-                "name='" + name + '\'' +
-                ", teacherNo=" + teacherNo +
-                ", telephone='" + telephone + '\'' +
-                '}';
+        return teacherNo + "," + name + "," + telephone;
     }
 }

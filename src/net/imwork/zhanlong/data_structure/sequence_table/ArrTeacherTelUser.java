@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- *
+ * 完成教师电话信息的管理
  * @author 展龙
  */
 public class ArrTeacherTelUser
 {
     public static void main(String[] args) throws IOException
     {
-        ArrTeacherTel teacherTel = new ArrTeacherTel(20);
+        ArrTeacherTel teacherTel = new ArrTeacherTel(2);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while (true)
@@ -33,6 +33,7 @@ public class ArrTeacherTelUser
             {
                 case 0:
                     System.exit(0);
+                    break;
                 case 1:
                     System.out.print("\n请输入教师编号：");
                     int TeacherNum = Integer.parseInt(br.readLine());
@@ -75,6 +76,7 @@ public class ArrTeacherTelUser
                     teacherTel.delete(name);
                     System.out.println();
                     break;
+                default:
             }
 
         }
